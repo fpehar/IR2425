@@ -5,15 +5,15 @@
 Pronađi sve **dokumente** koji sadrže **pojmove** i zadovoljavaju uvjete:
 
 ```
-sveučilište AND zadar
+`Sveučilište` AND zadar
 ```
 
 ```
-mmt OR mma
+unizd OR zadar
 ```
 
 ```
-mmt AND NOT mma
+unizd AND NOT zadar
 ```
 
 ```
@@ -44,14 +44,12 @@ mmt AND NOT mma
 ```
 
 * &shy;<!-- .element: class="fragment" --> \#1: _a book about information retrieval_ <span>&rarr;
-  Match</span><!-- .element: class="fragment" style="color: green;" -->
+  Podudarno</span><!-- .element: class="fragment" style="color: green;" -->
 * &shy;<!-- .element: class="fragment" --> \#2: _a book about the search for information_ <span>&rarr;
-  Match</span><!-- .element: class="fragment" style="color: green;" -->
-* &shy;   <!-- .element: class="fragment" --> \#3: _a book about information_ <span>&rarr; No
-  Match</span><!-- .element: class="fragment" style="color: red;" -->
+  Podudarno</span><!-- .element: class="fragment" style="color: green;" -->
+* &shy;   <!-- .element: class="fragment" --> \#3: _a book about information_ <span>&rarr; Ne podudarju se</span><!-- .element: class="fragment" style="color: red;" -->
 
-Bilješke:
-Pitanja
+
 ---
 
 # Terminologija
@@ -67,7 +65,6 @@ Pitanja
 &shy;<!-- .element: class="fragment" --> Glasovni asistenti i generativni AI alati poput ChatGPT-a, premošćuju razliku između *informacijske potrebe* i *upita*
 
 
-Bilješke:
 ---
 
 # Jednostavna implementacija Booleaovog pretraživanja
@@ -76,6 +73,7 @@ Bilješke:
 2. Primijeni booleove operatore: Presjek / Unija
 
 ---
+
 # Grep
 
 <!-- .slide: class="audience-question" -->
@@ -112,7 +110,7 @@ Bilješke: Koji su neki od problema s grepom?
 2. *a book about the search for information*
 3. *a book about retrieving information*
 
-Bilješke:
+
 ---
 <!-- .slide: class="audience-question" -->
 
@@ -137,8 +135,6 @@ Bilješke:
 * #2 *a book about the search for information*
 * #3 *a book about retrieving information*
 
-Bilješke:
-Pitanja
 ---
 
 <!-- .slide: class="audience-question" --> 
@@ -158,8 +154,6 @@ Pitanja
 
 ![...](images/grep.png) <!-- .element: class="fragment" data-fragment-index="2" -->
 
-Bilješke:
-Pitanja
 ---
 
 # Kompleksnost
@@ -205,8 +199,6 @@ Usporedi prvi popis rezultata sa svakim sljedećim: <!-- .element: class="fragme
 
 $$O(\text{broj pojmova u upitu} \times \text{broj rezultata po pojmu})$$<!-- .element: class="fragment" -->
 
-Bilješke:
-Pitanja
 ---
 
 # Složenost grepa
@@ -228,10 +220,9 @@ Napomene: Kako se ovo može poboljšati?
 
 * &shy;<!-- .element: class="fragment" -->   Odgovara li _books_ pojmu _book_?
     * &shy;<!-- .element: class="fragment" -->Ne može se nositi s jedninom/množinom, *books* ne odgovara *book*.
-* &shy;<!-- .element: class="fragment" --> _go_ naspram _went_
-* &shy;<!-- .element: class="fragment" --> _running_ naspram _run_
-* &shy;<!-- .element: class="fragment" --> _go_ naspram _gong_
+* &shy;<!-- .element: class="fragment" --> _`go`_ naspram _`went`_
+* &shy;<!-- .element: class="fragment" --> _`running`_ naspram _`run`_
+* &shy;<!-- .element: class="fragment" --> _`go`_ naspram _`gong`_
 
 Nije prilagođeno korisnicima!<!-- .element: class="fragment" -->
 
-Bilješke
