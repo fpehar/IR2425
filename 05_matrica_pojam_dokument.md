@@ -33,8 +33,6 @@ Dokumenti moraju biti prethodno obrađeni
 | **Retrieval**   | 1<!-- .element: class="fragment" data-fragment-index="3" --> | 0<!-- .element: class="fragment" data-fragment-index="7" --> | 0<!-- .element: class="fragment" data-fragment-index="11" --> |
 | **Search**      | 0<!-- .element: class="fragment" data-fragment-index="4" --> | 1<!-- .element: class="fragment" data-fragment-index="8" --> | 0<!-- .element: class="fragment" data-fragment-index="12" --> |
 
-Napomene:
-Pitanje za publiku
 ---
 
 <!-- .slide: class="audience-question" -->
@@ -56,8 +54,6 @@ Pitanje za publiku
   <dd>Retrieval: <code>(1, 0, 0)</code><!-- .element: class="fragment" --></dd>
 </dl>
 
-Bilješka:
-Pitanja
 ---
 
 <!-- .slide: class="audience-question" -->
@@ -77,8 +73,6 @@ Zamijeni svaki pojam u upitu s odgovarajućim vektorom pojma
 
 <!-- .element: style="list-style-type: none;" -->
 
-Bilješka:
-Pitanja
 ---
 
 <!-- .slide: class="audience-question" -->
@@ -95,8 +89,6 @@ Pitanja
 * &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Matrica pojmova i dokumenata: 2 pojma iz upita &times; 1,2 milijuna
   jedinstvenih pojmova = **2,4 milijuna pretraga**
 
-Bilješka:
-Pitanja
 ---
 
 <!-- .slide: class="audience-question" -->
@@ -118,9 +110,8 @@ To je preveliko! Kako se veličina može smanjiti?<!-- .element: class="fragment
 
 &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Matrica je vrlo rijetka, većinom sadrži nule
 
-Bilješka:
-Pitanja
+
 ---
 &shy;<!-- .element: class="stretch" --> ![...](images/buch-index.png)
 
-Bilješke
+
